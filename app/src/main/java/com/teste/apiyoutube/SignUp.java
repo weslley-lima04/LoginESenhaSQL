@@ -81,7 +81,7 @@ public class SignUp extends AppCompatActivity
                             //Creating array for data
                             String[] data = {fullname, username, password, email};
 
-                            PutData putData = new PutData("http://192.168.1.3/api_youtube/signup.php", "POST", field, data);
+                            PutData putData = new PutData("http://localhost/api_youtube/signup.php", "POST", field, data);
                             if (putData.startPut())
                             {
                                 if (putData.onComplete())
