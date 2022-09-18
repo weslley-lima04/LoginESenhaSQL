@@ -87,7 +87,7 @@ public class SignUp extends AppCompatActivity
                             data[1] = username;
                             data[2] = password;
                             data[3] = email;
-                            PutData putData = new PutData("http://192.168.1.3/api_youtube/signup.php", "POST", field, data);
+                            PutData putData = new PutData("http://localhost/api_youtube/signup.php", "POST", field, data);
                             if (putData.startPut())
                             {
                                 if (putData.onComplete())
